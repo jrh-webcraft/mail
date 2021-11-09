@@ -1,0 +1,25 @@
+{
+  "name": "@jrh-works/mail",
+  "version": "1.0.0",
+  "description": "Send emails from Node.js (via SendGrid) with optional test runs.",
+  "main": "source/mail.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jrh-works/mail.git"
+  },
+  "scripts": {
+    "test": "mocha -r tests/tests.support source/*.test.js"
+  },
+  "devDependencies": {
+    "@jrh-works/assure": "^1.0.0",
+    "async": "^3.2.0",
+    "chai": "^4.3.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.4",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2"
+  }
+}
